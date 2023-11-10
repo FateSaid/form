@@ -1,0 +1,98 @@
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    overflow-y: hidden;
+}
+
+.image-container{
+    position:relative;
+    text-align:center;
+}
+
+.image-container > .credit{
+    position: absolute;
+            bottom: 10%;
+            right:30%;
+            color: white;
+            font-size: 1rem;
+}
+
+.credit>a{
+    color:lightcoral;
+    text-decoration:none;
+}
+
+img{
+    width:30rem;
+    height:100vh;
+    flex:auto;
+}
+
+.container{
+    display:flex;
+    height:100%;
+}
+
+
+
+form{
+    display:flex;
+    flex-direction:column;
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.75);
+    padding-left:1rem;
+    margin-bottom:20px
+
+}
+
+.second-side{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    width:100%;
+}
+
+p{
+    font-weight: bold;
+    padding-left:2rem;
+}
+
+.form-name,
+.form-contact,
+.form-password{
+    display:flex;
+}
+
+.form-first-name,
+.form-last-name,
+.form-phone,
+.form-email,
+.form-password-one,
+.form-password-two{
+    display:flex;
+    flex-direction:column;
+    padding:1rem;
+}
+
+label{
+    display:inline-block;
+    font-family:monospace;
+}
+
+.button-confirm{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:50px;
+    margin-left:30px;
+    gap:20px;
+}
+
+button{
+    padding:10px 40px;
+    background-color: green;
+    border: none;
+    color:white;
+    border-radius: 3px;
+    align-self:flex-start;
+    
+}
