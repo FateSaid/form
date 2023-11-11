@@ -1,14 +1,16 @@
-const password = document.querySelector('.form-password-one');
-const form = document.querySelector('form');
-const confirmPassword = document.querySelector('.form-password-two');
-const tell = document.querySelector('#phone');
-const btn = document.querySelector('button');
+const myForm = document.getElementById('myForm');
 
-export{}; 
+myForm.noValidate = true;
 
-password.addEventListener('input', ()=>{
-    if(password.textContent === confirmPassword.textContent){
-        password.className = 'valid';
-        confirmPassword.className = 'valid';
+myForm.addEventListener('submit' validateForm);
+
+function validateForm(){
+    const form = e.target;
+    
+    if(form.checkValidate(e)){
+
     }
-})
+    else{
+        e.preventDefault();
+    }
+}
